@@ -5,13 +5,7 @@ import { WsModule } from '../ws/ws.module';
 import { HealthController } from './health.controller';
 
 @Module({
-  imports: [
-    WsModule,
-    GameModule,
-  ],
-  controllers: [
-    VersionController,
-    HealthController,
-  ],
+    imports: [WsModule, GameModule],
+    controllers: [VersionController, HealthController],
 })
 export class AppModule {}

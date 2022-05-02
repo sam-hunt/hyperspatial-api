@@ -6,4 +6,4 @@ import { WsGateway } from './ws.gateway';
     imports: [GameModule],
     providers: [WsGateway],
 })
-export class WsModule { }
+export class WsModule {}

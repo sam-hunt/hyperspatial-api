@@ -4,12 +4,10 @@ import { GameServer } from '../game/game-server';
 
 @WebSocketGateway({ path: '/ws' })
 export class WsGateway implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect {
-
     @WebSocketServer()
     private wsServer: WsServer;
 
-    public constructor(private readonly gameServer: GameServer) {
-    }
+    public constructor(private readonly gameServer: GameServer) {}
 
     public afterInit(server: WsServer) {
         // TODO: Notify game server of readiness to receive connections

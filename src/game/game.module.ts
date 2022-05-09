@@ -8,8 +8,6 @@ import { GameServer } from './game-server';
             useValue: new GameServer(),
         },
     ],
-    exports: [
-        GameServer,
-    ],
+    exports: [GameServer],
 })
-export class GameModule { }
+export class GameModule {}

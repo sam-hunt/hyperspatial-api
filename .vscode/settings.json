@@ -1,0 +1,13 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.enable": true,
+    "eslint.validate": [
+        "typescript",
+        "javascript",
+    ],
+    "eslint.workingDirectories": [
+        "./src",
+    ],
+}
